@@ -1,0 +1,61 @@
+*,
+html,
+body {
+  font-size: $baseFontSize;
+  font-family: $fontFamily;
+}
+
+
+// Header Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+  line-height: $headingLineHeight;
+}
+
+
+h1 {
+  font-size: $giganticFontSize;
+}
+
+h2 {
+  font-size: $hugeFontSize;
+}
+
+h3 {
+  font-size: $largeFontSize;
+}
+
+h4 {
+  font-size: $baseFontSize;
+}
+
+// Paragraphs
+p {
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight
+}
+
+
+// Text Styles
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-weight: inherit;
+  text-decoration: none;
+}
