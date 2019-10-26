@@ -1,3 +1,19 @@
 ///// Font Imports /////
-// @include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, $file-formats: ttf);
-// @include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, italic, $file-formats: ttf);
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Playfair+Display:400,400i,700|Raleway:300,400,500,700&display=swap&subset=latin-ext');
+
+
+$dancing-script: 'Dancing Script',
+cursive;
+$raleway: 'Raleway',
+sans-serif;
+$playfair: 'Playfair Display',
+serif;
+
+$font-size: 22;
+
+@mixin font($family: $raleway, $size: $font-size, $weight: $regular, $color: $grey) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

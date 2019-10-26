@@ -1,5 +1,5 @@
 // Font Family
-$fontFamily: "Open Sans",
+$fontFamily: 'Raleway',
 sans-serif;
 
 // Base Font and Color
@@ -11,14 +11,21 @@ $headingLineHeight : 1.2;
 
 // Font Sizing
 $giganticFontSize: rem(48px);
-$hugeFontSize: rem(36px);
+$hugeFontSize: rem(33px);
 $largeFontSize: rem(30px);
-$mediumFontSize: rem(24px);
-$smallFontSize: rem(14px);
-$miniFontSize: rem(11px);
+$mediumFontSize: rem(25px);
+$smallFontSize: rem(16px);
+$miniFontSize: rem(14px);
 
 
 // Colors
+$white: #ffffff;
+$grayMenu: #696969;
+$grayLogo: #838181;
+$grayTitle: #5a5957;
+$grayDesc: #848282;
 
 
 // Buttons Styles
+$btnColor: $white;
+$btnSize: $smallFontSize;
