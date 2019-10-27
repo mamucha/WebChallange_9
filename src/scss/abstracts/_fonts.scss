@@ -8,12 +8,3 @@ $raleway: 'Raleway',
 sans-serif;
 $playfair: 'Playfair Display',
 serif;
-
-$font-size: 22;
-
-@mixin font($family: $raleway, $size: $font-size, $weight: $regular, $color: $grey) {
-    font-family: $family;
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-}

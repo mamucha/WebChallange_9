@@ -5,6 +5,14 @@
     @return ($px / $base) * 1rem;
 }
 
+//set fonts
+@mixin font($family: $raleway, $size: $baseFontSize, $weight:400, $color:black) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
 // pseudoelemnt
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
     content: $content;

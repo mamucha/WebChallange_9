@@ -20,19 +20,27 @@ h6 {
 
 
 h1 {
-  font-size: $giganticFontSize;
+  font-size: $h1-size;
 }
 
 h2 {
-  font-size: $hugeFontSize;
+  font-size: $h2-size;
 }
 
 h3 {
-  font-size: $largeFontSize;
+  font-size: $h3-size
 }
 
 h4 {
-  font-size: $baseFontSize;
+  font-size: $h4-size;
+}
+
+h5 {
+  font-size: $h5-size;
+}
+
+h6 {
+  font-size: $h6-size;
 }
 
 // Paragraphs
