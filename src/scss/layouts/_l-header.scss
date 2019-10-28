@@ -2,12 +2,13 @@
     background: url('../img/intro/pic_1.png');
     background-size: cover;
     background-position: center;
-    z-index: -1;
+
 
     &::after {
         @include position($top:0, $left:0);
         @include size(100%);
         background-color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
     }
 
 
