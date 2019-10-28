@@ -1,5 +1,29 @@
 .c-intro {
+    max-width: 660px;
     text-align: center;
+    font-family: $raleway;
+    color: $white;
+    font-weight: 400;
+    z-index: 2;
+
+    &__title {
+        position: relative;
+        font-family: $playfair;
+        font-size: rem(48px);
+        margin: 55px 0;
+
+        &::after {
+            @include position($bottom:-25px, $left:50%);
+            transform: translateX(-50%);
+            width: 80px;
+            border: 2px solid white;
+        }
+
+    }
+
+    &__subtitle {
+        padding: 0 85px;
+    }
 
 
 }
