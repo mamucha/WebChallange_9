@@ -1,0 +1,22 @@
+.l-header {
+    background: url('../img/intro/pic_1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    &::after {
+        @include position($top:0, $left:0);
+        @include size(100%);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    &__wrapper {
+        max-width: 1120px;
+        margin: 0 auto;
+        height: 100vh;
+        @include flex(flex, center, center, column);
+        z-index: 2;
+    }
+}
