@@ -1,0 +1,16 @@
+.c-menu {
+    height: 60px;
+    width: 100%;
+
+
+    &__wrapper {
+        max-width: 950px;
+        margin: 0 auto;
+        @include flex(flex, center, space-between);
+        height: 100%;
+    }
+
+    &__list {
+        @include flex(flex, center, space-between);
+    }
+}
