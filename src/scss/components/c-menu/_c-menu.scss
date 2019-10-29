@@ -3,6 +3,12 @@
     width: 100%;
     border-bottom: 1px solid #ebebeb;
 
+    &--fixed {
+        position: fixed;
+        top: 0;
+        background-color: $white;
+    }
+
 
     &__wrapper {
         max-width: 1230px;
