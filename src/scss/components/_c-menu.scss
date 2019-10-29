@@ -1,16 +1,54 @@
 .c-menu {
     height: 60px;
     width: 100%;
+    border-bottom: 1px solid #ebebeb;
 
 
     &__wrapper {
-        max-width: 950px;
+        max-width: 1230px;
         margin: 0 auto;
         @include flex(flex, center, space-between);
         height: 100%;
     }
 
+    &__logo {
+
+        &--title {
+            color: #838181;
+            font-size: rem(22px);
+        }
+    }
+
     &__list {
+        width: 450px;
         @include flex(flex, center, space-between);
+    }
+
+    &__item {
+        position: relative;
+        color: #696969;
+        font-family: Raleway;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #d07c7c;
+            transform-origin: bottom right;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        &:hover::before {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
     }
 }
