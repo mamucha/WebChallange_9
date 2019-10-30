@@ -1,0 +1,31 @@
+.c-header {
+    max-width: 760px;
+    text-align: center;
+
+    &__title {
+        position: relative;
+        font-family: $playfair;
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #5a5957;
+        margin-bottom: 60px;
+
+        &::after {
+            @include position($bottom:-22px, $left:50%);
+            @include size(62px, 3px);
+            transform: translateX(-50%);
+            background-color: #d07c7c;
+        }
+    }
+
+    &__subtitle {
+        font-family: $raleway;
+        color: #848282;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+
+    }
+}
