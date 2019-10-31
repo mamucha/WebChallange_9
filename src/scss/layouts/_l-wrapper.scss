@@ -1,7 +1,7 @@
 .l-wrapper {
     max-width: 1230px;
     width: 100%;
-    padding: 140px 0;
-    @include flex_center();
+    margin: 140px auto 70px;
+    @include flex(flex, center, center, column);
 
 }
