@@ -1,0 +1,34 @@
+.c-socials {
+
+    min-width: 600px;
+    @include flex(flex, center, space-between);
+
+    &__box {
+        @include size(50px);
+        @include flex_center();
+        position: relative;
+        transition: .3s all ease-in-out;
+
+        &::after {
+            @include position($top:50%, $left:50%);
+            @include size(90px);
+            transform: translate(-50%, -50%);
+            border: 2px solid #e6b5b5;
+            border-radius: 50%;
+            opacity: 0;
+            transition: .4s all ease-in-out;
+        }
+
+        &:hover {
+            @include size(50px);
+            background-color: #e6b5b5;
+            border-radius: 50%;
+            color: #ffffff;
+
+            &::after {
+                @include size(60px);
+                opacity: 1;
+            }
+        }
+    }
+}
