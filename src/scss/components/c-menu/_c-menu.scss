@@ -3,6 +3,7 @@
     width: 100%;
     border-bottom: 1px solid #ebebeb;
     transition: .4s box-shadow linear;
+    z-index: 99;
 
     &--fixed {
         position: fixed;
