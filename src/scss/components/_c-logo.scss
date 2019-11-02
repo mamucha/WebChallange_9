@@ -3,14 +3,37 @@
     color: $white;
     font-style: italic;
     font-weight: 400;
+    text-align: center;
+
+    &--footer {
+        color: #000000;
+    }
 
     &__title {
 
         font-size: rem(33px);
+
+        &--footer {
+            font-size: rem(21px);
+        }
     }
 
     &__subtitle {
         font-size: rem(23px);
+
+        &--footer {
+            font-size: rem(15px);
+        }
+    }
+
+    &__copyright {
+        color: #848282;
+        font-family: Raleway;
+        font-size: rem(12px);
+        font-weight: 300;
+        padding-top: 22px;
+        line-height: 20px;
+        line-height: 18px;
     }
 
 }

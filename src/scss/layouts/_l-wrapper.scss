@@ -4,4 +4,15 @@
     margin: 140px auto 70px;
     @include flex(flex, center, center, column);
 
+    &--footer {
+        margin: 60px auto 30px;
+
+
+        & svg {
+            margin-bottom: 20px;
+            color: #848282;
+            cursor: pointer;
+        }
+    }
+
 }
