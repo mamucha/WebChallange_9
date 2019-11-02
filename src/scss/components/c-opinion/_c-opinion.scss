@@ -1,0 +1,29 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.c-opinion {
+
+    @include flex(flex, center, space-between, column);
+
+    height: 80px;
+
+    &__quote {
+        color: #848282;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    &__author {
+        color: #a0a0a0;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    &__dots {
+        bottom: -40px;
+    }
+}
