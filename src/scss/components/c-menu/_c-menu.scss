@@ -61,7 +61,7 @@
     &__item {
         // position: relative;
         // padding: 15px;
-        @include flex_center();
+        // @include flex_center();
         color: #696969;
         font-family: Raleway;
         font-size: 13px;
@@ -103,15 +103,18 @@
     }
 
     &__link {
-        padding: 15px;
+        display: inline-block;
+        padding: 18px;
         position: relative;
+        width: 100%;
+        text-align: center;
 
         &::before {
             content: '';
             position: absolute;
             left: 50%;
             bottom: 10px;
-            width: 100%;
+            width: 20%;
             height: 2px;
             background-color: #fc2f70;
             transform-origin: center;
