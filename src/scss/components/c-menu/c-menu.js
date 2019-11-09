@@ -13,22 +13,22 @@ document.addEventListener("scroll", () => {
 $(document).ready(function () {
     $('.c-menu__hamburger').click(function () {
         $(this).toggleClass('c-menu__hamburger--open');
-        $('.c-menu__list').slideToggle();
         $('.c-menu__list').toggleClass('c-menu__list--open');
-
-    });
-
-    $('.c-menu__link').click(function () {
-        $('.c-menu__hamburger').toggleClass('c-menu__hamburger--open');
         $('.c-menu__list').slideToggle();
-        // $('.c-menu__list').toggleClass('c-menu__list--open');
 
     });
+
+    $('.c-menu__list').click(function () {
+        $('.c-menu__hamburger').removeClass('c-menu__hamburger--open');
+        $('.c-menu__list').removeClass('c-menu__list--open');
+        $('.c-menu__list').slideUp();
+
+    });
+
+
 
     $('.c-menu__link').on('click', function () {
         const goToSection = $(this).attr('href');
-
-        console.log(goToSection);
 
         $('body, html').animate({
             scrollTop: $(goToSection).offset().top - $(window).height() / 4
