@@ -3,6 +3,7 @@
     width: 100%;
     margin: 140px auto 70px;
     @include flex(flex, center, center, column);
+    padding: 0 20px;
 
     &--footer {
         margin: 60px auto 30px;
@@ -14,5 +15,13 @@
             cursor: pointer;
         }
     }
+}
 
+//media queries
+// screen > 1024px
+
+@mixin l-wrapper\@screen_medium {
+    .l-wrapper {
+        padding: 0;
+    }
 }

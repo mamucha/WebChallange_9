@@ -8,11 +8,14 @@
 @media only screen and (min-width: 768px) {
     @include c-menu\@screen_medium;
 
+
 }
 
 
 // Wide screen > 1024px
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    @include l-wrapper\@screen_medium;
+}
 
 
 // Mega screen > 1280px
