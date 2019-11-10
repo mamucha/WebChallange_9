@@ -1,7 +1,8 @@
 .c-form {
 
     @include flex(flex, center, center, column);
-    width: 585px;
+    max-width: 585px;
+    width: 80%;
     padding-top: 50px;
     color: #848282;
     font-family: Raleway;
@@ -30,7 +31,25 @@
 
     &__footer {
         width: 100%;
-        @include flex(flex, center, space-between);
-        padding-top: 25px;
+        @include flex(flex, center, space-around, column);
+        // padding-top: 25px;
+        height: 110px;
+    }
+}
+
+
+//media queries
+//screen > 1024px
+
+@mixin c-form\@screen_wide {
+
+    .c-form {
+        width: 100%;
+
+        &__footer {
+            @include flex(flex, center, space-between);
+            padding-top: 25px;
+            height: auto;
+        }
     }
 }

@@ -16,6 +16,7 @@
 // Wide screen > 1024px
 @media only screen and (min-width: 1024px) {
     @include c-card\@screen_wide;
+    @include c-form\@screen_wide;
 
 
 }
