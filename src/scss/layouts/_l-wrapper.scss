@@ -1,9 +1,9 @@
 .l-wrapper {
     max-width: 1230px;
-    width: 100%;
+    width: 90%;
     margin: 140px auto 70px;
     @include flex(flex, center, center, column);
-    padding: 0 20px;
+    padding: 0;
 
     &--footer {
         margin: 60px auto 30px;
@@ -18,10 +18,10 @@
 }
 
 //media queries
-// screen > 1024px
+// screen > 1280px
 
-@mixin l-wrapper\@screen_medium {
+@mixin l-wrapper\@screen_mega {
     .l-wrapper {
-        padding: 0;
+        width: 100%;
     }
 }

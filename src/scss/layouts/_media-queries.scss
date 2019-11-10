@@ -14,9 +14,13 @@
 
 // Wide screen > 1024px
 @media only screen and (min-width: 1024px) {
-    @include l-wrapper\@screen_medium;
+    @include c-card\@screen_wide;
+
+
 }
 
 
 // Mega screen > 1280px
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    @include l-wrapper\@screen_mega;
+}
