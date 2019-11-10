@@ -7,6 +7,7 @@
 // Medium screen > 768px
 @media only screen and (min-width: 768px) {
     @include c-menu\@screen_medium;
+    @include c-card\@screen_medium;
 
 
 }
