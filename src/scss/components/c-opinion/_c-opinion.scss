@@ -4,8 +4,7 @@
 .c-opinion {
 
     @include flex(flex, center, space-between, column);
-
-    height: 80px;
+    height: 100px;
 
     &__quote {
         color: #848282;
@@ -13,6 +12,7 @@
         font-size: 18px;
         font-weight: 300;
         line-height: 25px;
+        text-align: center;
     }
 
     &__author {
