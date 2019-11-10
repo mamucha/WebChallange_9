@@ -1,5 +1,6 @@
 .c-intro {
     max-width: 660px;
+    width: 90%;
     text-align: center;
     font-family: $raleway;
     color: $white;
@@ -28,6 +29,16 @@
         padding-top: 140px;
         font-size: 22px;
         animation: arrow 1s ease-in-out infinite;
+
+        &--svg {
+            cursor: pointer;
+            transition: .4s all ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
     }
 
 }
