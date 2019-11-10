@@ -1,11 +1,13 @@
 .c-socials {
 
-    min-width: 600px;
-    @include flex(flex, center, space-between);
+    max-width: 600px;
+    width: 100%;
+    @include flex(flex, center, space-around);
 
     &__box {
         @include size(50px);
         @include flex_center();
+        color: $grayDesc;
         position: relative;
         transition: .3s all ease-in-out;
 
