@@ -27,7 +27,7 @@
 
     &__arrow {
         padding-top: 140px;
-        font-size: 22px;
+        font-size: rem(22px);
         animation: arrow 1s ease-in-out infinite;
 
         &--svg {

@@ -8,8 +8,8 @@
 
     &__quote {
         color: #848282;
-        font-family: Raleway;
-        font-size: 18px;
+        font-family: $raleway;
+        font-size: rem(18px);
         font-weight: 300;
         line-height: 25px;
         text-align: center;
@@ -17,8 +17,8 @@
 
     &__author {
         color: #a0a0a0;
-        font-family: Raleway;
-        font-size: 14px;
+        font-family: $raleway;
+        font-size: rem(14px);
         font-weight: 300;
         line-height: 25px;
     }

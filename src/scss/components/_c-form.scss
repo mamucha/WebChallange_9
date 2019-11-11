@@ -5,16 +5,15 @@
     width: 80%;
     padding-top: 50px;
     color: #848282;
-    font-family: Raleway;
-    font-size: 13px;
+    font-family: $raleway;
+    font-size: rem(13px);
     font-weight: 400;
     line-height: 18px;
     z-index: 1;
 
 
     &__input {
-        width: 100%;
-        height: 50px;
+        @include size(100%, 50px);
         padding-left: 30px;
         margin-bottom: 15px;
         border: 1px solid #d07c7c;
@@ -22,18 +21,15 @@
     }
 
     &__text {
-        width: 100%;
-        height: 140px;
+        @include size(100%, 140px);
         padding: 20px 0 0 30px;
         margin-bottom: 15px;
         border: 1px solid #d07c7c;
     }
 
     &__footer {
-        width: 100%;
+        @include size(100%, 100px);
         @include flex(flex, center, space-around, column);
-        // padding-top: 25px;
-        height: 110px;
     }
 }
 

@@ -6,7 +6,7 @@
     &__title {
         position: relative;
         font-family: $playfair;
-        font-size: 25px;
+        font-size: rem(25px);
         font-weight: 400;
         text-transform: uppercase;
         color: #5a5957;
@@ -23,8 +23,7 @@
     &__subtitle {
         font-family: $raleway;
         color: #848282;
-        font-family: Raleway;
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
         line-height: 26px;
 

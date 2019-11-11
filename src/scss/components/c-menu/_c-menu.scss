@@ -1,6 +1,5 @@
 .c-menu {
-    height: 70px;
-    width: 100%;
+    @include size(100%, 70px);
     border-bottom: 1px solid #ebebeb;
     transition: .4s box-shadow linear;
     z-index: 100;
@@ -51,12 +50,9 @@
     }
 
     &__item {
-        // position: relative;
-        // padding: 15px;
-        // @include flex_center();
         color: #696969;
         font-family: Raleway;
-        font-size: 13px;
+        font-size: rem(13px);
         font-weight: 500;
         text-transform: uppercase;
         cursor: pointer;
@@ -81,12 +77,11 @@
         text-align: center;
 
         &::before {
+            @include size(20%, 2px);
             content: '';
             position: absolute;
             left: 50%;
             bottom: 10px;
-            width: 20%;
-            height: 2px;
             background-color: #fc2f70;
             transform-origin: center;
             transform: translate(-50%, 0) scaleX(0);
@@ -148,7 +143,6 @@
 
             &:nth-child(3) {
                 top: calc(35px - 5px);
-                // top: 36px;
                 transform-origin: left center;
             }
         }
