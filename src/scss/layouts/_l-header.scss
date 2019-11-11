@@ -4,8 +4,7 @@
         background: url('../img/intro/pic_1.png');
         background-size: cover;
         background-position: center;
-        // max-width: 1120px;
-        // margin: 0 auto;
+        position: relative;
         height: 100vh;
         @include flex(flex, center, center, column);
         z-index: 2;

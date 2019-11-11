@@ -148,7 +148,49 @@
             transition: .5s all ease-in-out;
         }
     }
+
+    &__open {
+        @include size(100vw, 100vh);
+        @include position($position: fixed, $top:0, $left:0);
+        z-index: 99;
+        padding-top: 70px;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        &-wrapper {
+            @include position($position: relative, $top:50%, $left:50%);
+            max-width: 850px;
+            height: 70%;
+            padding: 10px;
+            background: #fff;
+            transform: translate(-50%, -50%);
+        }
+
+        &--img {
+            @include size(100%);
+            object-fit: cover;
+        }
+    }
+
+    &__button {
+
+        @include size(30px);
+        @include position($top:-35px, $right:-35px);
+        @include flex_center();
+        color: #000;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 18px;
+        font-size: 26px;
+        border-radius: 50%;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+
 }
+
+
+
 
 // media queries 
 //screen > 768px
